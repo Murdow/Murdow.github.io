@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Meu Horário</title>
+	<meta name="author" content="Grupo 4">
+	<meta name="description" content="Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit Amet">
+	<meta name="keywords" content="horario, aulas, app, senac">
+	<meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type="text/javascript">
+		$(document).ready(function($) { 
+		    $(".scroll").click(function(event){        
+		        event.preventDefault();
+		        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+		   });
+
+
+		    $(window).scroll(function() {
+		   		var scrollPosition = $(window).scrollTop();
+		   		if(scrollPosition > 150) {
+		    		$('#topScreenMenu').slideDown();
+		   		}
+		   		else {
+		   			$('#topScreenMenu').slideUp();
+		   		}
+			});		    
+		});
+	</script>
+
+</head>
+<body>
+
+	<div id="wrapper">
+
+		<nav id="topScreenMenu">
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3" id="menuLogo">
+						<a href="#topSection" class="scroll pull-left"><img src="logo.png" alt="logo meu horario"></a>
+					</div>
+					<div class="col-md-9">
+						<ul class="pull-right">
+							<li><a href="#funcionalidades" class="scroll">Funcionalidades</a></li>
+							<li><a href="#carousel" class="scroll">Interface</a></li>
+							<li><a href="#infoTecnicas" class="scroll">Informações</a></li>
+							<li><a href="#reviews" class="scroll">Reviews</a></li>
+						</ul>
+					</div>
+				</div><!--End .row-->
+			</div><!--End .fluid-container-->		
+
+		</nav>
+
+		<section id="topSection">
+
+			<nav id="mainMenu">
+				<ul>
+					<li><a href="#funcionalidades" class="scroll">Funcionalidades</a></li>
+					<li><a href="#carousel" class="scroll">Interface</a></li>
+					<li><a href="#infoTecnicas" class="scroll">Informações</a></li>
+					<li><a href="#reviews" class="scroll">Reviews</a></li>
+				</ul>
+			</nav>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<article class="content">
+							<img id="logo" src="logo.png" alt="logo meu horario">
+							<p>
+								Com o objetivo de facilitar a vida dos acadêmicos, de professores á alunos do Centro Universitário Senac, o app Meu Horário informa sobre a grade de horários e as salas de cada aula do curso, além de dar aos professores uma maneira fácil de avisar seus alunos sobre alterações de sala. 
+							</p>
+							<a href='https://play.google.com/store/apps/details?id=tsi.senac.gradehoraria&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='botao google play' src='https://play.google.com/intl/en_us/badges/images/generic/pt_badge_web_generic.png'/></a>
+						</article>
+					</div><!--end .col-->
+				</div><!--End.row-->
+			</div><!--End .container-->
+
+		</section><!--End #topSection-->
+
+		<section id="funcionalidades">
+
+			<h2>FUNCIONALIDADES</h2>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 block">
+						<img src="icon.png" alt="dec">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+						</p>
+					</div>
+					<div class="col-md-4 block">
+						<img src="icon.png" alt="dec">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+						</p>
+					</div><div class="col-md-4 block">
+						<img src="icon.png" alt="dec">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+						</p>
+					</div>
+				</div><!--End .row-->
+
+				<div class="row">
+					<div class="col-md-4 block">
+						<img src="icon.png" alt="dec">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+						</p>
+					</div>
+					<div class="col-md-4 block">
+						<img src="icon.png" alt="dec">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+						</p>
+					</div><div class="col-md-4 block">
+						<img src="icon.png" alt="dec">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+						</p>
+					</div>
+				</div><!--End .row-->
+			</div><!--End .container-->
+		</section><!--End funcionalidades-->
+
+		<section id="carousel">
+
+			<h2>INTERFACE</h2>
+
+			<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+
+							<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							  	<!-- Indicators -->
+								 <ol class="carousel-indicators">
+								    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								    <li data-target="#myCarousel" data-slide-to="1"></li>
+								    <li data-target="#myCarousel" data-slide-to="2"></li>
+								    <li data-target="#myCarousel" data-slide-to="3"></li>		
+								 </ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+								    <div class="item active">			
+								      	<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+										<img src="1.jpg" alt="logo">
+								    </div>
+
+								    <div class="item">
+								      	<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+										<img src="2.jpg" alt="grade de horarios">
+								    </div>
+
+								    <div class="item">
+								    	<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+										<img src="3.jpg" alt="personalização de horarios">
+								    </div>
+
+								    <div class="item">
+								    	<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+										<img src="4.jpg" alt="craditos">
+								    </div>
+								</div><!--End .carousel-inner-->
+							</div><!--End #myCarousel-->
+
+						</div>
+					</div><!--End .row-->
+			</div><!--End .container-->
+		</section><!--End .#carousel-->
+
+		<section id="infoTecnicas">
+
+			<h2>INFORMAÇÕES TÉCNICAS</h2>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+
+						<ul>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ul>
+
+					</div>
+
+					<div class="col-md-6">
+
+						<ul>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ul>
+
+					</div>
+				</div><!--End .row-->
+			</div><!--End .container-->
+
+		</section><!--End #infoTecnica-->
+
+		<section id="reviews">
+
+			<h2>REVIEWS</h2>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<article class="reviewContainer">
+							<header>
+								<img class="pull-left" src="icon.png" alt="img icon">
+								<h3>Name</h3>
+							</header>
+							
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</article>
+
+					</div>
+				</div><!--End .row-->
+
+				<div class="row">
+					<div class="col-md-12">
+
+						<article class="reviewContainer pull-right text-right">
+							<header>
+								<img class="pull-right" src="icon.png" alt="img icon">
+								<h3>Name</h3>
+							</header>
+							
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</article>
+
+					</div>
+				</div><!--End .row-->
+
+				<div class="row">
+					<div class="col-md-12">
+
+						<article class="reviewContainer">
+							<header>
+								<img class="pull-left" src="icon.png" alt="img icon">
+								<h3>Name</h3>
+							</header>
+
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</article>
+
+					</div>
+				</div><!--End .row-->
+			</div><!--End .container-->
+
+		</section><!--End r#eviews-->
+
+		<footer>
+
+			<p>Tecnologia em Sistemas para Internet</p>
+			<p>&copy; Todos os direitos reservados</p>
+
+		</footer>
+
+	</div><!--end #wrapper-->
+
+</body>
+</html>

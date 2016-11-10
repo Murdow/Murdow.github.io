@@ -1,0 +1,174 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#wrapper {
+	width: 100%;
+}
+section {
+	padding: 150px 0 125px 0;
+}
+h2 {
+	margin-bottom: 70px;
+	text-align: center;
+}
+#topScreenMenu {
+	background-color: #32338e;
+	display: none;
+	height: 100px;
+	padding: 20px 0;
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+}
+#topScreenMenu a img {
+	width: 300px;
+}
+#topScreenMenu ul li {
+	border-right: solid 2px #fff;
+	display: inline-block;
+}
+#topScreenMenu ul {
+	margin-top: 25px;
+}
+/*Main Menu*/
+#mainMenu {
+	background-color: #fff;
+	border-radius: 10px;
+	line-height: 24px;
+	margin: 0 auto;
+	padding: 10px 0 3px 0;
+	text-align: center;
+	width: 800px;
+	z-index: 1000;
+}
+#mainMenu ul, #topScreenMenu ul,  {
+	list-style: none;
+}
+#mainMenu ul li {
+	border-right: solid 2px #32338e;
+	display: inline-block;
+}
+#mainMenu ul li a, #topScreenMenu ul li a {	
+	color: #32338e;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 20px;
+}
+#topScreenMenu ul li a {
+	color: #fff;
+}
+#mainMenu ul li a:hover, #topScreenMenu ul li a:hover {
+	text-decoration: underline;
+}
+#mainMenu ul li:last-child, #topScreenMenu ul li:last-child {
+	border-right: none;
+}
+/*end Main Menu*/
+
+/*TopSection*/
+#topSection {
+	background-color: #32338e;
+}
+.content {
+	margin: 0 auto;
+	max-width: 640px;
+	text-align: center;
+	width: 100%;
+}
+#logo {
+	margin-top: 150px;
+}
+#topSection .content p {
+	color: #fff;
+	font-size: 16.5px;
+	margin: 50px 0;
+	font-family: "Myriad Pro";
+}
+#topSection .content a img {
+	margin-bottom: 50px;
+	width: 220px;
+}
+/*end topSection*/
+
+/*funcionalidades*/
+.block {
+	margin-bottom: 105px;
+	text-align: center;
+}
+.block p {
+	margin-top: 20px;
+}
+/*end funcionalidades*/
+
+/*carousel*/
+#carousel {
+	background-color: #32338e;
+	color: #fff;
+}
+.item {
+	padding: 0 150px;
+}
+#carousel .item p {
+	float: left;
+	width: 45%;
+}
+#carousel .item img {
+	float: right;
+	width: 305px;
+}
+.item img {
+	margin-bottom: 100px;
+}
+#myCarousel ol {
+	bottom: 0;
+}
+.carousel-indicators li {
+	background-color: #bbbbbb;
+	height: 15px;
+	width: 15px;
+}
+.carousel-indicators .active {
+	background-color: red;
+	height: 15px;
+	width: 15px;
+}
+/*end carousel*/
+
+/*infoTecnicas*/
+#infoTecnicas {
+	
+} 
+/*End infoTecnicas*/
+
+/*Reviews*/
+#reviews {
+	background-color: #32338e;
+	color: #fff;
+}
+.reviewContainer {
+	width: 800px;
+}
+.reviewContainer header {
+	height: 48px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.reviewContainer header h3 {
+	line-height: 48px;
+	margin-left: 60px;
+}
+#reviews .row:nth-child(2) .reviewContainer header h3 {
+	margin-left: 0;
+	margin-right: 60px;
+}
+/*End reviews*/
+
+/*Footer*/
+footer {
+	background-color: #000;
+	color: #fff;
+	padding: 30px 0;
+	text-align: center;
+}
+/*End footer*/
