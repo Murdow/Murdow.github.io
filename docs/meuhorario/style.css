@@ -12,8 +12,9 @@ h2 {
 	margin-bottom: 70px;
 	text-align: center;
 }
-#topScreenMenu { border-bottom: solid 2px yellow;
+#topScreenMenu { 
 	background-color: #32338e;
+	border-bottom: solid 2px yellow;
 	display: none;
 	height: auto;
 	padding: 10px 0;
