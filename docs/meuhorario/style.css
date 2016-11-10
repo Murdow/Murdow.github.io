@@ -12,28 +12,28 @@ h2 {
 	margin-bottom: 70px;
 	text-align: center;
 }
-#topScreenMenu {
+#topScreenMenu { border-bottom: solid 2px yellow;
 	background-color: #32338e;
 	display: none;
-	height: 100px;
-	padding: 20px 0;
+	height: auto;
+	padding: 10px 0;
 	position: fixed;
 	z-index: 1000;
 	width: 100%;
 }
 #topScreenMenu a img {
-	width: 300px;
+	width: 150px;
 }
 #topScreenMenu ul li {
 	border-right: solid 2px #fff;
 	display: inline-block;
 }
 #topScreenMenu ul {
-	margin-top: 25px;
+	margin-top: 10px;
 }
 /*Main Menu*/
 #mainMenu {
-	background-color: #fff;
+	border-bottom: solid 2px yellow;
 	border-radius: 10px;
 	line-height: 24px;
 	margin: 0 auto;
@@ -46,17 +46,17 @@ h2 {
 	list-style: none;
 }
 #mainMenu ul li {
-	border-right: solid 2px #32338e;
+	border-right: solid 2px #fff;
 	display: inline-block;
 }
 #mainMenu ul li a, #topScreenMenu ul li a {	
-	color: #32338e;
+	color: #fff;
 	font-size: 18px;
 	font-weight: bold;
 	padding: 0 20px;
 }
 #topScreenMenu ul li a {
-	color: #fff;
+	font-size: 16px;
 }
 #mainMenu ul li a:hover, #topScreenMenu ul li a:hover {
 	text-decoration: underline;
