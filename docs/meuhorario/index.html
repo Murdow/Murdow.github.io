@@ -8,6 +8,7 @@
 	<meta name="keywords" content="horario, aulas, app, senac">
 	<meta name="robots" content="index,follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -18,18 +19,26 @@
 		    $(".scroll").click(function(event){        
 		        event.preventDefault();
 		        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+		        $(".scroll").removeClass("activeLink");
+		        $(this).addClass("activeLink");
 		   });
 
 
 		    $(window).scroll(function() {
-		   		var scrollPosition = $(window).scrollTop();
-		   		if(scrollPosition > 150) {
-		    		$('#topScreenMenu').slideDown();
+		    	if($(window).width() > 960) {
+			   		var scrollPosition = $(window).scrollTop();
+			   		if(scrollPosition > 150) {
+			    		$('#topScreenMenu').slideDown();
+			   		}
+			   		else {
+			   			$('#topScreenMenu').slideUp();
+			   		}
 		   		}
-		   		else {
-		   			$('#topScreenMenu').slideUp();
-		   		}
-			});		    
+			});	
+
+			$("#mobileMenuIcon").click(function(){
+				$("#mobileMenu").toggle();
+			});	    
 		});
 	</script>
 
@@ -43,19 +52,34 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3" id="menuLogo">
-						<a href="#topSection" class="scroll pull-left"><img src="logo.png" alt="logo meu horario"></a>
+						<a href="#topSection" class="scroll pull-left"><img src="imagens/logo.png" alt="logo meu horario"></a>
 					</div>
 					<div class="col-md-9">
 						<ul class="pull-right">
 							<li><a href="#funcionalidades" class="scroll">Funcionalidades</a></li>
 							<li><a href="#carousel" class="scroll">Interface</a></li>
 							<li><a href="#infoTecnicas" class="scroll">Informações</a></li>
-							<li><a href="#reviews" class="scroll">Reviews</a></li>
+							<li><a href="#reviews" class="scroll">Estão Dizendo</a></li>
 						</ul>
+
+						<img id="mobileMenuIcon" class="pull-right" src="imagens/menu-icon.png" alt="menu">
 					</div>
 				</div><!--End .row-->
 			</div><!--End .fluid-container-->		
 
+		</nav>
+
+		<nav id="mobileMenu">
+			<div class="fluid-container">
+				<div class="row">
+					<ul>
+						<li><a href="#funcionalidades" class="scroll">Funcionalidades</a></li>
+						<li><a href="#carousel" class="scroll">Interface</a></li>
+						<li><a href="#infoTecnicas" class="scroll">Informações</a></li>
+						<li><a href="#reviews" class="scroll">Estão Dizendo</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 
 		<section id="topSection">
@@ -65,7 +89,7 @@
 					<li><a href="#funcionalidades" class="scroll">Funcionalidades</a></li>
 					<li><a href="#carousel" class="scroll">Interface</a></li>
 					<li><a href="#infoTecnicas" class="scroll">Informações</a></li>
-					<li><a href="#reviews" class="scroll">Reviews</a></li>
+					<li><a href="#reviews" class="scroll">Estão Dizendo</a></li>
 				</ul>
 			</nav>
 
@@ -73,7 +97,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<article class="content">
-							<img id="logo" src="logo.png" alt="logo meu horario">
+							<img id="logo" src="imagens/logo.png" alt="logo meu horario">
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
@@ -91,21 +115,21 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4 block">
-						<img src="icon.png" alt="dec">
+					<div class="col-md-4 col-sm-12 block">
+						<img src="imagens/icon.png" alt="dec">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 						</p>
 					</div>
-					<div class="col-md-4 block">
-						<img src="icon.png" alt="dec">
+					<div class="col-md-4 col-sm-12 block">
+						<img src="imagens/icon.png" alt="dec">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 						</p>
-					</div><div class="col-md-4 block">
-						<img src="icon.png" alt="dec">
+					</div><div class="col-md-4 col-sm-12 block">
+						<img src="imagens/icon.png" alt="dec">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
@@ -114,21 +138,21 @@
 				</div><!--End .row-->
 
 				<div class="row">
-					<div class="col-md-4 block">
-						<img src="icon.png" alt="dec">
+					<div class="col-md-4 col-sm-12 block">
+						<img src="imagens/icon.png" alt="dec">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 						</p>
 					</div>
-					<div class="col-md-4 block">
-						<img src="icon.png" alt="dec">
+					<div class="col-md-4 col-sm-12 block">
+						<img src="imagens/icon.png" alt="dec">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 						</p>
-					</div><div class="col-md-4 block">
-						<img src="icon.png" alt="dec">
+					</div><div class="col-md-4 col-sm-12 block">
+						<img src="imagens/icon.png" alt="dec">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
@@ -152,7 +176,10 @@
 								    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 								    <li data-target="#myCarousel" data-slide-to="1"></li>
 								    <li data-target="#myCarousel" data-slide-to="2"></li>
-								    <li data-target="#myCarousel" data-slide-to="3"></li>		
+								    <li data-target="#myCarousel" data-slide-to="3"></li>	
+								    <li data-target="#myCarousel" data-slide-to="4"></li>	
+								    <li data-target="#myCarousel" data-slide-to="5"></li>
+								    <li data-target="#myCarousel" data-slide-to="6"></li>
 								 </ol>
 
 								<!-- Wrapper for slides -->
@@ -161,28 +188,46 @@
 								      	<p>
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 										</p>
-										<img src="1.jpg" alt="logo">
+										<img src="imagens/slideshow/1.jpg" alt="seleção do curso">
 								    </div>
 
 								    <div class="item">
 								      	<p>
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 										</p>
-										<img src="2.jpg" alt="grade de horarios">
+										<img src="imagens/slideshow/2.jpg" alt="grade de horarios">
 								    </div>
 
 								    <div class="item">
 								    	<p>
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 										</p>
-										<img src="3.jpg" alt="personalização de horarios">
+										<img src="imagens/slideshow/3.jpg" alt="seleção de semestre">
 								    </div>
 
 								    <div class="item">
 								    	<p>
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 										</p>
-										<img src="4.jpg" alt="craditos">
+										<img src="imagens/slideshow/4.jpg" alt="dados da aula">
+								    </div>
+								    <div class="item">
+								      	<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+										<img src="imagens/slideshow/5.jpg" alt="menu de edição">
+								    </div>
+								    <div class="item">
+								      	<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+										<img src="imagens/slideshow/6.jpg" alt="tela de personalização do horário">
+								    </div>
+								    <div class="item">
+								      	<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+										<img src="imagens/slideshow/7.jpg" alt="tela de configuração">
 								    </div>
 								</div><!--End .carousel-inner-->
 							</div><!--End #myCarousel-->
@@ -198,7 +243,7 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-6">
 
 						<ul>
 							<li>Lorem ipsum dolor sit amet</li>
@@ -219,7 +264,7 @@
 
 					</div>
 
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-6">
 
 						<ul>
 							<li>Lorem ipsum dolor sit amet</li>
@@ -254,24 +299,7 @@
 
 						<article class="reviewContainer">
 							<header>
-								<img class="pull-left" src="icon.png" alt="img icon">
-								<h3>Name</h3>
-							</header>
-							
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-						</article>
-
-					</div>
-				</div><!--End .row-->
-
-				<div class="row">
-					<div class="col-md-12">
-
-						<article class="reviewContainer pull-right text-right">
-							<header>
-								<img class="pull-right" src="icon.png" alt="img icon">
+								<img src="imagens/icon.png" alt="img icon">
 								<h3>Name</h3>
 							</header>
 							
@@ -288,7 +316,24 @@
 
 						<article class="reviewContainer">
 							<header>
-								<img class="pull-left" src="icon.png" alt="img icon">
+								<img src="imagens/icon.png" alt="img icon">
+								<h3>Name</h3>
+							</header>
+							
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</article>
+
+					</div>
+				</div><!--End .row-->
+
+				<div class="row">
+					<div class="col-md-12">
+
+						<article class="reviewContainer">
+							<header>
+								<img src="imagens/icon.png" alt="img icon">
 								<h3>Name</h3>
 							</header>
 
@@ -305,8 +350,16 @@
 
 		<footer>
 
-			<p>Tecnologia em Sistemas para Internet</p>
-			<p>&copy; Todos os direitos reservados</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<p>Tecnologia em Sistemas para Internet</p>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<p>&copy; Todos os direitos reservados</p>
+					</div>
+				</div><!--End .row-->
+			</div><!--End .container-->			
 
 		</footer>
 

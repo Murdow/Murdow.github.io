@@ -1,3 +1,6 @@
+html, body {
+	height: 100%;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -12,9 +15,16 @@ h2 {
 	margin-bottom: 70px;
 	text-align: center;
 }
+ul {
+	list-style: none;
+}
+/*Navigation*/
+nav {
+	text-transform: uppercase;
+}
 #topScreenMenu { 
 	background-color: #32338e;
-	border-bottom: solid 2px yellow;
+	border-bottom: solid 2px #ffc709;
 	display: none;
 	height: auto;
 	padding: 10px 0;
@@ -25,14 +35,10 @@ h2 {
 #topScreenMenu a img {
 	width: 150px;
 }
-#topScreenMenu ul li {
-	border-right: solid 2px #fff;
-	display: inline-block;
-}
 #topScreenMenu ul {
 	margin-top: 10px;
 }
-/*Main Menu*/
+
 #mainMenu {
 	border-bottom: solid 2px yellow;
 	border-radius: 10px;
@@ -40,13 +46,11 @@ h2 {
 	margin: 0 auto;
 	padding: 10px 0 3px 0;
 	text-align: center;
-	width: 800px;
+	max-width: 800px;
+	width: 100%;
 	z-index: 1000;
 }
-#mainMenu ul, #topScreenMenu ul,  {
-	list-style: none;
-}
-#mainMenu ul li {
+#mainMenu ul li, #topScreenMenu ul li {
 	border-right: solid 2px #fff;
 	display: inline-block;
 }
@@ -65,11 +69,48 @@ h2 {
 #mainMenu ul li:last-child, #topScreenMenu ul li:last-child {
 	border-right: none;
 }
-/*end Main Menu*/
+
+#topScreenMenu .activeLink {
+	color: #ffc315;
+	text-decoration: underline;
+}
+/*end Navigation*/
+/*MobileMenu*/
+#mobileMenuIcon {
+	display: none;
+}
+#mobileMenu {
+	background-color: #32338e;	
+	display: none;
+	left: 0;
+	height: auto;	
+	position: fixed;
+	top: 55px;
+	z-index: 100;
+	width: 100%;
+}
+#mobileMenu ul li {
+	border-bottom: solid 2px #ffc709;
+	display: block;
+	height: 40px;
+	width: 100%;
+}
+#mobileMenu ul li a {
+	color: #fff;
+	font-weight: bold;
+	line-height: 40px;
+	margin-left: 50px;	
+	
+	text-decoration: none;	
+}
+/*end MobileMenu*/
 
 /*TopSection*/
+
 #topSection {
-	background-color: #32338e;
+	background: #32338e url(imagens/bg.jpg) center no-repeat;
+	 box-sizing: border-box;
+	min-height: 100%;
 }
 .content {
 	margin: 0 auto;
@@ -79,6 +120,8 @@ h2 {
 }
 #logo {
 	margin-top: 150px;
+	max-width: 436px;
+	width: 80%;
 }
 #topSection .content p {
 	color: #fff;
@@ -130,7 +173,7 @@ h2 {
 	width: 15px;
 }
 .carousel-indicators .active {
-	background-color: red;
+	background-color: #ffc607;
 	height: 15px;
 	width: 15px;
 }
@@ -148,7 +191,8 @@ h2 {
 	color: #fff;
 }
 .reviewContainer {
-	width: 800px;
+	max-width: 800px;
+	width: 100%;
 }
 .reviewContainer header {
 	height: 48px;
@@ -159,17 +203,86 @@ h2 {
 	line-height: 48px;
 	margin-left: 60px;
 }
+.reviewContainer header img {
+	float: left;
+}
+#reviews .row:nth-child(2) .reviewContainer {
+	float: right;
+}
+#reviews .row:nth-child(2) .reviewContainer header img {
+	float: right;
+}
 #reviews .row:nth-child(2) .reviewContainer header h3 {
 	margin-left: 0;
 	margin-right: 60px;
+	text-align: right;
 }
 /*End reviews*/
 
 /*Footer*/
 footer {
-	background-color: #000;
-	color: #fff;
-	padding: 30px 0;
+	background-color: #fff;
+	color: #666;
+	padding: 10px 0;
 	text-align: center;
 }
 /*End footer*/
+
+/*MEDIA*/
+@media only screen and (max-width: 960px) {
+	#topScreenMenu .container {
+		padding: 0 5px;
+	}
+	#mainMenu {
+		display: none;
+	}
+	#topScreenMenu, #mobileMenuIcon {
+		display: block;
+	}
+	#topScreenMenu .container {
+		padding: 0 15px;
+	}
+	#topScreenMenu ul {
+		display: none;
+	}
+	#topSection {
+		padding-top: 50px;
+	}
+	#myCarousel .item {
+		padding: 0;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 740px) {
+	#reviews .row:nth-child(2) .reviewContainer {
+		float: none;
+	}
+	#reviews .row:nth-child(2) .reviewContainer header img {
+		float: left;
+	}
+	#reviews .row:nth-child(2) .reviewContainer header h3 {
+		margin-left: 60px;
+		margin-right: 0;
+		text-align: left;
+	}
+}
+@media only screen and (max-width: 580px) {
+	#myCarousel .item p {
+		width: 40%;
+	}
+	#myCarousel .item img {
+		width: 40%;
+	}
+	#myCarousel ol {
+		bottom: -80px;
+	}
+}
+@media only screen and (max-width: 450px) {
+	#myCarousel .item p {
+		width: 100%;
+	}
+	#myCarousel .item img {
+		float: none;
+		margin: 0 auto;
+	}
+}
