@@ -10,6 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -25,8 +26,8 @@
 
 
 		    $(window).scroll(function() {
-		    	if($(window).width() > 960) {
-			   		var scrollPosition = $(window).scrollTop();
+		    	var scrollPosition = $(window).scrollTop();
+		    	if($(window).width() > 960) {			   		
 			   		if(scrollPosition > 150) {
 			    		$('#topScreenMenu').slideDown();
 			   		}
@@ -34,10 +35,27 @@
 			   			$('#topScreenMenu').slideUp();
 			   		}
 		   		}
+		   		if(scrollPosition > 120) {
+	   				$("#topScreenMenuLogo").removeClass("hidden");
+	   			}
+	   			else {
+	   				$("#topScreenMenuLogo").addClass("hidden");
+	   			}
 			});	
 
+			var isVisible = false;
 			$("#mobileMenuIcon").click(function(){
-				$("#mobileMenu").toggle();
+				if(!isVisible) {
+					$("#mobileMenu").slideDown();
+					$("#mobileMenuIcon").attr("src","imagens/menu-close-icon.png");
+					isVisible = true;
+				}
+				else {
+					$("#mobileMenu").slideUp();
+					$("#mobileMenuIcon").attr("src","imagens/menu-icon.png");
+					isVisible = false;
+				}
+				
 			});	    
 		});
 	</script>
@@ -51,10 +69,10 @@
 			
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3" id="menuLogo">
-						<a href="#topSection" class="scroll pull-left"><img src="imagens/logo.png" alt="logo meu horario"></a>
+					<div class="col-md-3 col-sm-8" id="menuLogo">
+						<a id="topScreenMenuLogo" class="hidden scroll" href="#topSection" class="scroll pull-left"><img src="imagens/logo.png" alt="logo meu horario"></a>
 					</div>
-					<div class="col-md-9">
+					<div class="col-md-9 col-sm-4">
 						<ul class="pull-right">
 							<li><a href="#funcionalidades" class="scroll">Funcionalidades</a></li>
 							<li><a href="#carousel" class="scroll">Interface</a></li>
@@ -291,7 +309,7 @@
 
 		<section id="reviews">
 
-			<h2>REVIEWS</h2>
+			<h2>ESTÃO DIZENDO</h2>
 
 			<div class="container">
 				<div class="row">
