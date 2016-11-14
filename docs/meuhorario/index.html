@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Meu Horário</title>
-	<meta name="author" content="Grupo 4">
+	<meta name="author" content="Manuel Ciolfi">
 	<meta name="description" content="Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit Amet. Lorem Ipsum Dolor Sit Lorem Ipsum Dolor Sit Amet">
 	<meta name="keywords" content="horario, aulas, app, senac">
 	<meta name="robots" content="index,follow">
@@ -15,112 +15,75 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<script type="text/javascript">
-		$(document).ready(function($) { 
-		    $(".scroll").click(function(event){        
-		        event.preventDefault();
-		        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
-		        $(".scroll").removeClass("activeLink");
-		        $(this).addClass("activeLink");
-		   });
-
-
-		    $(window).scroll(function() {
-		    	var scrollPosition = $(window).scrollTop();
-		    	if($(window).width() > 960) {			   		
-			   		if(scrollPosition > 150) {
-			    		$('#topScreenMenu').slideDown();
-			   		}
-			   		else {
-			   			$('#topScreenMenu').slideUp();
-			   		}
-		   		}
-		   		if(scrollPosition > 120) {
-	   				$("#topScreenMenuLogo").removeClass("hidden");
-	   			}
-	   			else {
-	   				$("#topScreenMenuLogo").addClass("hidden");
-	   			}
-			});	
-
-			var isVisible = false;
-			$("#mobileMenuIcon").click(function(){
-				if(!isVisible) {
-					$("#mobileMenu").slideDown();
-					$("#mobileMenuIcon").attr("src","imagens/menu-close-icon.png");
-					isVisible = true;
-				}
-				else {
-					$("#mobileMenu").slideUp();
-					$("#mobileMenuIcon").attr("src","imagens/menu-icon.png");
-					isVisible = false;
-				}
-				
-			});	    
-		});
-	</script>
+	<script type="text/javascript" src="behavior.js"></script>
 
 </head>
 <body>
 
-	<div id="wrapper">
-
-		<nav id="topScreenMenu">
-			
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 col-sm-8" id="menuLogo">
-						<a id="topScreenMenuLogo" class="hidden scroll" href="#topSection" class="scroll pull-left"><img src="imagens/logo.png" alt="logo meu horario"></a>
-					</div>
-					<div class="col-md-9 col-sm-4">
-						<ul class="pull-right">
-							<li><a href="#funcionalidades" class="scroll">Funcionalidades</a></li>
-							<li><a href="#carousel" class="scroll">Interface</a></li>
-							<li><a href="#infoTecnicas" class="scroll">Informações</a></li>
-							<li><a href="#reviews" class="scroll">Estão Dizendo</a></li>
-						</ul>
-
-						<img id="mobileMenuIcon" class="pull-right" src="imagens/menu-icon.png" alt="menu">
-					</div>
-				</div><!--End .row-->
-			</div><!--End .fluid-container-->		
-
-		</nav>
-
-		<nav id="mobileMenu">
-			<div class="fluid-container">
-				<div class="row">
-					<ul>
-						<li><a href="#funcionalidades" class="scroll">Funcionalidades</a></li>
-						<li><a href="#carousel" class="scroll">Interface</a></li>
-						<li><a href="#infoTecnicas" class="scroll">Informações</a></li>
-						<li><a href="#reviews" class="scroll">Estão Dizendo</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+	<div id="wrapper">		
 
 		<section id="topSection">
 
+			<h1>Meu Horário</h1>
+
+			<nav id="topScreenMenu">
+
+				<h2>Top Screen Menu</h2>
+			
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-8 col-xs-6" id="menuLogo">
+							<a id="topScreenMenuLogo" class="hidden scroll" href="#topSection"><img src="imagens/logo.png" alt="logo meu horario" title="logo"></a>
+						</div>
+						<div class="col-md-9 col-sm-4 col-xs-6">
+							<ul class="pull-right">
+								<li><a href="#funcionalidades" class="scroll" title="Funcionalidades">Funcionalidades</a></li>
+								<li><a href="#carousel" class="scroll" title="Interface">Interface</a></li>
+								<li><a href="#infoTecnicas" class="scroll" title="Informações Técnicas">Informações</a></li>
+								<li><a href="#reviews" class="scroll" title="Estão Dizendo">Estão Dizendo</a></li>
+							</ul>
+
+							<img id="mobileMenuIcon" class="pull-right" src="imagens/icones/menu-icon.png" alt="menu" title="Icone Menu">
+						</div>
+					</div><!--End .row-->
+				</div><!--End .fluid-container-->		
+
+			</nav>
+
+			<nav id="mobileMenu">
+				<h2>Mobile Menu</h2>
+				<div class="fluid-container">
+					<div class="row">
+						<ul>
+							<li><a href="#funcionalidades" class="scroll" title="Funcionalidades">Funcionalidades</a></li>
+							<li><a href="#carousel" class="scroll" title="Interface">Interface</a></li>
+							<li><a href="#infoTecnicas" class="scroll" title="Informações Técnicas">Informações</a></li>
+							<li><a href="#reviews" class="scroll" title="Estão Dizendo">Estão Dizendo</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
 			<nav id="mainMenu">
+				<h2>Main Menu</h2>
 				<ul>
-					<li><a href="#funcionalidades" class="scroll">Funcionalidades</a></li>
-					<li><a href="#carousel" class="scroll">Interface</a></li>
-					<li><a href="#infoTecnicas" class="scroll">Informações</a></li>
-					<li><a href="#reviews" class="scroll">Estão Dizendo</a></li>
+					<li><a href="#funcionalidades" class="scroll" title="Funcionalidades">Funcionalidades</a></li>
+					<li><a href="#carousel" class="scroll" title="Interface">Interface</a></li>
+					<li><a href="#infoTecnicas" class="scroll" title="Informações Técnicas">Informações</a></li>
+					<li><a href="#reviews" class="scroll" title="Estão Dizendo">Estão Dizendo</a></li>
 				</ul>
 			</nav>
 
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<article class="content">
+						<div class="content">
 							<img id="logo" src="imagens/logo.png" alt="logo meu horario">
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
 							<a href='https://play.google.com/store/apps/details?id=tsi.senac.gradehoraria&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='botao google play' src='https://play.google.com/intl/en_us/badges/images/generic/pt_badge_web_generic.png'/></a>
-						</article>
+						</div>
 					</div><!--end .col-->
 				</div><!--End.row-->
 			</div><!--End .container-->
@@ -134,20 +97,20 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 col-sm-12 block">
-						<img src="imagens/icon.png" alt="dec">
+						<img src="imagens/icones/icon.png" alt="dec">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 						</p>
 					</div>
 					<div class="col-md-4 col-sm-12 block">
-						<img src="imagens/icon.png" alt="dec">
+						<img src="imagens/icones/icon.png" alt="dec">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 						</p>
 					</div><div class="col-md-4 col-sm-12 block">
-						<img src="imagens/icon.png" alt="dec">
+						<img src="imagens/icones/icon.png" alt="dec">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
@@ -157,20 +120,20 @@
 
 				<div class="row">
 					<div class="col-md-4 col-sm-12 block">
-						<img src="imagens/icon.png" alt="dec">
+						<img src="imagens/icones/icon.png" alt="dec">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 						</p>
 					</div>
 					<div class="col-md-4 col-sm-12 block">
-						<img src="imagens/icon.png" alt="dec">
+						<img src="imagens/icones/icon.png" alt="dec">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 						</p>
 					</div><div class="col-md-4 col-sm-12 block">
-						<img src="imagens/icon.png" alt="dec">
+						<img src="imagens/icones/icon.png" alt="dec">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.

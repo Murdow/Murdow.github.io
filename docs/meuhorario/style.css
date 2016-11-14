@@ -32,6 +32,7 @@ nav {
 	height: 60px;
 	padding-top: 10px;
 	position: fixed;
+	top: 0;
 	z-index: 1000;
 	width: 100%;
 }
@@ -111,9 +112,19 @@ nav {
 /*end MobileMenu*/
 
 /*TopSection*/
-
+/*Hides nav heading*/
+#topSection h1, #topSection #topScreenMenu h2, #topSection #mobileMenu h2, #topSection #mainMenu h2 {
+	position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important; 
+    width: 1px !important; 
+    overflow: hidden;
+}
 #topSection {
-	background: #32338e url(imagens/bg.jpg) center no-repeat;
+	background: #32338e url(imagens/backgrounds/bg.jpg) center no-repeat;
 	box-sizing: border-box;
 	min-height: 100%;
 }
@@ -152,7 +163,7 @@ nav {
 
 /*carousel*/
 #carousel {
-	background-color: #32338e;
+	background: #32338e url(imagens/backgrounds/interface-bg.jpg);
 	color: #fff;
 }
 .item {
@@ -192,7 +203,7 @@ nav {
 
 /*Reviews*/
 #reviews {
-	background: #32338e url(imagens/review-bg.jpg) center no-repeat fixed;
+	background: #32338e url(imagens/backgrounds/review-bg.jpg) center no-repeat fixed;
 	color: #fff;
 }
 .reviewContainer {
@@ -242,7 +253,7 @@ footer {
 		margin-top: 50px;
 	}
 	#topScreenMenu .container {
-		padding: 0 5px;
+		padding: 0;
 	}
 	#mainMenu {
 		display: none;
@@ -267,6 +278,9 @@ footer {
 	}
 }
 @media only screen and (max-width: 740px) {
+	h2 {
+		letter-spacing: 0;
+	}
 	#reviews .row:nth-child(2) .reviewContainer {
 		float: none;
 	}
@@ -280,6 +294,9 @@ footer {
 	}
 }
 @media only screen and (max-width: 580px) {
+	#carousel {
+		padding-bottom: 125px;
+	}
 	#myCarousel .item p {
 		width: 40%;
 	}
