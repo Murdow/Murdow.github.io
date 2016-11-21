@@ -28,12 +28,12 @@ $(document).ready(function($) {
 	var isVisible = false;
 	$("#mobileMenuIcon").click(function(){
 		if(!isVisible) {
-			$("#mobileMenu").slideDown();
+			$("#topScreenMenu ul").slideDown();
 			$("#mobileMenuIcon").attr("src","imagens/icones/menu-close-icon.png");
 			isVisible = true;
 		}
 		else {
-			$("#mobileMenu").slideUp();
+			$("#topScreenMenu ul").slideUp();
 			$("#mobileMenuIcon").attr("src","imagens/icones/menu-icon.png");
 			isVisible = false;
 		}
