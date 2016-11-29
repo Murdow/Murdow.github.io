@@ -6,8 +6,7 @@ html {
 	font-size: 10px;
 }
 #wrapper {
-	font-family: "Roboto", helvetica;
-	
+	font-family: "Roboto", helvetica, arial;	
 	margin: 0 auto;
 	max-width: 1920px;
 	width: 100%;
@@ -33,14 +32,12 @@ nav {
 	border-bottom: solid 2px #ffc709;
 	display: none;
 	height: 60px;
+	max-width: 1920px;
 	padding-top: 10px;
 	position: fixed;
 	top: 0;
 	z-index: 1000;
 	width: 100%;
-}
-#topScreenMenu a img {
-	width: 150px;
 }
 #topScreenMenu ul {
 	margin-top: 10px;
@@ -55,7 +52,7 @@ nav {
 	margin: 0 auto;
 	padding: 10px 0 3px 0;
 	text-align: center;
-	max-width: 800px;
+	max-width: 650px;
 	width: 100%;
 	z-index: 1000;
 }
@@ -65,7 +62,7 @@ nav {
 }
 #mainMenu ul li a, #topScreenMenu ul li a {	
 	color: #fff;
-	font-family: "Montserrat", helvetica;
+	font-family: "Montserrat", helvetica, arial;
 	font-size: 1.4em;
 	font-weight: normal;
 	padding: 0 20px;
@@ -73,8 +70,9 @@ nav {
 #topScreenMenu ul li a {
 	font-size: 1em;
 }
-#mainMenu ul li a:hover, #topScreenMenu ul li a:hover {
-	text-decoration: underline;
+#mainMenu ul li a:hover {
+	color: #ffc315;
+	text-decoration: none;
 }
 #mainMenu ul li:last-child, #topScreenMenu ul li:last-child {
 	border-right: none;
@@ -82,7 +80,7 @@ nav {
 
 #topScreenMenu .activeLink {
 	color: #ffc315;
-	text-decoration: underline;
+	text-decoration: none;
 }
 /*end Navigation*/
 /*MobileMenu*/
@@ -115,7 +113,7 @@ nav {
 	width: 100%;
 }
 #logo {
-	margin-top: 150px;
+	margin-top: 100px;
 	max-width: 436px;
 	width: 80%;
 }
@@ -186,18 +184,23 @@ h3 {
 	height: 15px;
 	width: 15px;
 }
-/*end carousel*/
-
-/*cursos*/
-#cursos ul {
-	text-align: center;
+.carousel-control.left, .carousel-control.right {
+	background-image: none;
+	color: #ffc607;
 }
-#cursos ul li {
-	font-size: 1.5em;
-	margin-bottom: 20px;
-}
-/*End cursos*/
+/*End carousel*/
 
+/*complementaryContent*/
+#complementaryContent {
+	background-color: #fff;
+	padding: 100px 0;
+}
+#complementaryContent h2 {
+	font-weight: lighter;
+	letter-spacing: 5px;
+	margin: 0;
+}
+/*End complementaryContent*/
 /*Reviews*/
 #reviews {
 	background: #32338e url(imagens/backgrounds/review-bg.jpg) center no-repeat fixed;
@@ -214,10 +217,12 @@ h3 {
 	width: 100%;
 }
 .reviewContainer header h3 {
+	font-size: 2em;
 	line-height: 48px;
 	margin-left: 60px;
 }
 .reviewContainer header img {
+	border-radius: 50px;
 	float: left;
 }
 #reviews .row:nth-child(2) .reviewContainer {
@@ -257,19 +262,15 @@ footer {
 	text-align: center;
 }
 /*End footer*/
-#complementaryContent {
-	background: url(imagens/backgrounds/complement-bg.jpg) bottom no-repeat fixed;
-	background-size: cover;
-	padding: 80px 0;
-}
-#complementaryContent h2 {
-	font-weight: lighter;
-	letter-spacing: 5px;
-}
+
 /*MEDIA*/
 @media only screen and (max-width: 960px) {
 	section {
 		padding: 50px 0;
+	}
+	#topSection, #carousel, #reviews {
+		background-size: auto;
+		background-attachment: scroll;
 	}
 	#logo {
 		margin-top: 50px;
@@ -354,8 +355,15 @@ footer {
 	}
 }
 @media only screen and (max-width: 450px) {
+	#myCarousel {
+		height: 450px;
+	}
+	#myCarousel .item h3 {
+		text-align: center;
+	}
 	#myCarousel .item p {
 		line-height: 20px;
+		margin-top: 10px;
 		width: 100%;
 	}
 	#myCarousel .item img {
@@ -363,7 +371,10 @@ footer {
 		margin: 0 auto;
 	}
 	#myCarousel ol {
-		left: 25%;
+		left: 30%;
 		width: 100%;
+	}
+	#reviews header h3 {
+		font-size: 1.5em;
 	}
 }
