@@ -1,0 +1,171 @@
+body, html {height: 100%;}
+@font-face {
+    font-family: fontLight;
+    src: url(fonts/Aller_Lt.woff);
+}
+@font-face {
+    font-family: fontRegular;
+    src: url(fonts/Aller_Rg.woff);
+}
+h1 {font-family: fontRegular;}
+p {font-family: fontLight;}
+h1, h2, p, a {color: #3e3e3e;}
+h1, h2 {margin: 0;}
+section {background-color: #fff;}
+
+/*HOME*/
+#banner {background: url(images/home/bg.png) #363636 left no-repeat fixed; height: 100%; max-height: 100%; overflow: hidden;}
+#banner div {padding: 0;}
+#banner div:first-child {display: flex; justify-content: center; flex-direction: column; height: 100%; position: relative;}
+#banner div:first-child img {left: 20px; position: fixed;}
+header {width: 100%; z-index: 1000;}
+nav ul {background-color: #fff; border: solid 1px #3e3e3e; display: inline-block; list-style: none; margin-bottom: 0; padding: 0;}
+.fixedHeader {background-color: #fff; position: fixed; top: 0;}
+nav ul li {display: inline-block;}
+nav ul li a {color: #3e3e3e; padding: 20px; transition: 1s;}
+nav ul li:first-child a {padding: 0;}
+nav ul li a:hover {background-color: #3e3e3e; color: #fff; text-decoration: none;}
+nav ul li:first-child a img {position: relative; z-index: 1000;}
+header .container-fluid {background-color: #3e3e3e; padding: 0;}
+#mobileMenu {display: none;}
+
+#tratamentosHome, #equipeHome {padding: 95px 0;}
+#diferenciaisHome {background-color: #313131; padding: 125px 0;}
+#diferenciaisHome h2, #diferenciaisHome p {color: #fff;}
+#diferenciaisHome h2 {margin-bottom: 80px;}
+#diferenciaisHome {background: url(images/home/diferenciaisBg.jpg) fixed; background-size: cover;}
+#tratamentosHome > div:first-child {padding-top: 5%;}
+#equipeHome > div:last-child {padding-top: 10%;}
+#tratamentosHome h1, #equipeHome h1, #diferenciaisHome h2 {font-size: 48px;}
+#tratamentosHome p, #equipeHome p, #diferenciaisHome p {font-size: 18px;}
+
+/*END HOME*/
+
+/*EQUIPE*/
+#equipe, #diferenciais, #tratamentos, #contato, .tratamentoSingle {padding: 80px 15px;}
+#equipe > h1, #diferenciais > h1, #tratamentos > h1, #contato > h1, .tratamentoSingle > h1 {font-size: 48px!important; margin-bottom: 100px;}
+.rowContainer  {background-color: #3e3e3e; border-radius: 10px; margin-bottom: 50px; width: 90%;}
+.rowContainer  .imgLeft, .rowContainer .imgRight {position: relative;}
+.rowContainer  .imgRight {right: -150px;}
+.rowContainer  .imgLeft {left: -150px;}
+.rowContainer  div {display: flex; justify-content: center; flex-direction: column; height: 300px; margin-left: -120px; max-width: 60%;}
+.rowContainer  div ul {list-style-position: inside; padding: 0;}
+.rowContainer  h1, .rowContainer  h2, .rowContainer  ul li, .rowContainer p {color: #fff;} 
+#diferenciais > p {margin-bottom: 120px;}
+#equipe h1, #diferenciais h1 {font-size: 30px;}
+#equipe h2 {font-size: 26px;}
+#equipe h1 span {font-size: 12px;}
+#equipe p, #equipe ul li, #diferenciais p, .tratamentoSingle ul li, .tratamentoSingle p, #contato p {font-size: 18px;}
+/*END EQUIPE*/
+
+/*TRATAMENTOS*/
+#tratamentosMenu .row:first-child {margin-bottom: 30px;}
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+.tratamentoSingle #tratamentosMenu {border-top: solid 1px #e6e6e6; margin-top: 40px; padding-top: 40px;}
+/*END TRATAMENTOS*/
+
+/*CONTATO*/
+iframe {height: 300px; margin-bottom: 20px; width: 100%;}
+#contato form .form-row .col-md-6 {padding: 0;}
+#contato form .form-row .col-md-6:first-child {padding-right: 10px;}
+#contato form .form-row .col-md-6:last-child {padding-left: 10px;}
+#contato input[type=submit] {background-color: #3e3e3e; color: #fff; padding: 10px 25px;}
+#contato aside p {margin-bottom: 0;}
+#contato i {margin-right: 5px;}
+#contato textarea {height: 300px; resize: none;}
+#contato aside div {background-color: #3e3e3e; margin-top: 35px; padding: 60px 0;}
+#contato aside div p, #contato aside div h2 {color: #fff;}
+#contato aside div h2 {margin-top: 50px;}
+#contato aside div i {background-color: #fff; border-radius: 50%; color: #3e3e3e; padding: 2px;}
+/*END CONTATO*/
+
+footer {background-color: #3e3e3e; color: #fff;}
+footer a, footer h2, footer p {color: #fff; font-size: 14px;}
+footer ul, #footer #social {list-style: none; padding: 0;}
+footer #social li {display: inline-block;}
+footer #cro {background-color: #292929; color: #888; padding: 15px 0;}
+footer #cro p {color: #888;}
+footer #cro a {margin-top: -3px;}
+footer > .container {padding: 35px 15px;}
+
+@media only screen and (max-width: 1200px) {
+    #banner div:last-child {display: none;}
+    #banner {background-size: cover;}
+    #banner .col-md-3 {width: 100%!important;}
+    #banner .col-md-3 img {margin: auto!important;}
+}
+@media only screen and (max-width: 990px) {
+    .rowContainer img {width: 200px;}
+    .rowContainer  .imgRight {right: -100px;}
+    .rowContainer  .imgLeft {left: -100px;}
+    .rowContainer  div {height: 200px; margin-left: 0; max-width: 50%;}
+    #equipe h1 {font-size: 26px;}
+    #equipe p, #equipe ul li {font-size: 14px;}
+    #tratamentosHome h1, #equipeHome h1, #diferenciaisHome h2 {font-size: 34px;}
+    #tratamentosHome p, #equipeHome p, #diferenciaisHome p {font-size: 14px;}
+}
+@media only screen and (max-width: 710px) {
+    #diferenciais article .pull-right, #diferenciais article .pull-left, #equipe article .pull-right, #equipe article .pull-left {float: none!important;}
+    .rowContainer {margin: 0; margin-bottom: 150px; width: 100%;}
+    .rowContainer  .imgRight {right: 0;}
+    .rowContainer  .imgLeft {left: 0;}
+    .rowContainer {text-align: center;}
+    .rowContainer  div {max-width: 100%;}
+    .rowContainer img {margin-top: -100px;}
+    #equipe .rowContainer  div {height: auto;}
+    #equipe .rowContainer {padding: 5px;}
+    #equipe > h1 {margin-bottom: 150px;}
+    #tratamentosMenu div {padding: 0!important;}
+    #tratamentosMenu .row:first-child {margin-bottom: 0;}
+    #contato form .form-row .col-md-6:last-child {padding-left: 0;}
+    #contato form .form-row .col-md-6:first-child {padding-right: 0;}
+    iframe {margin-top: 50px;}
+    #contato {padding: 80px 0;}
+    #contato > h1 {padding-left: 15px;}
+    header .container {padding: 0!important;}
+}
+@media only screen and (max-width: 674px) {
+    header nav {display: none; position: absolute; left: 0; right: 0;}
+    header nav ul {width: 100%;}
+    header nav ul li {display: block;}
+    header nav ul li:first-child {background-color: #3e3e3e;}
+    header nav ul li a {display: block; padding: 10px 0; padding-left: 15px; width: 100%;}
+    #mobileMenu {display: block; position: absolute; right: 15px; top: 15px;}
+    #mobileMenu i {color: #fff; font-size: 30px;}
+    #headerHome #mobileMenu {position: fixed; z-index: 1000;}
+    #headerHome #mobileMenu i {background-color: rgba(255,255,255,.5); color: #3e3e3e; padding: 0 5px;}
+}

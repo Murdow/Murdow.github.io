@@ -1,0 +1,469 @@
+@font-face {
+    font-family: 'heroregular';
+    src: url('fonts/hero-webfont.woff2') format('woff2'),
+         url('fonts/hero-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'hero_lightlight';
+    src: url('fonts/herolight-webfont.woff2') format('woff2'),
+         url('fonts/herolight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	
+	color: #fff;
+	font-family: "heroregular", helvetica;
+}
+#wrapper {
+	background: url(images/bg.jpg) no-repeat center fixed;
+	margin: 0 auto;
+	max-width: 1170px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1000;
+}
+h1, .pageHeader, h3 {
+	color: #3d2857;
+}
+.pageHeader {
+	margin-bottom: 50px;
+}
+/*NAVIGATION*/
+.navbar { 
+	height: 115px;
+	overflow-x: visible!important;
+	padding: 0 50px;
+}
+.navbar-brand {
+	padding: 0;
+}
+.navbar-brand img {
+	padding-left: 20px;
+}
+.nav {
+	margin-left: 65px;
+}
+.nav li a {
+	color: #6c6c6c;
+}
+.nav li a:hover {
+	background: none;
+	color: #3d2857;
+}
+.navbar-nav li a {
+	line-height: 80px;
+}
+.navbar-collapse {
+	position: relative;
+	z-index: 2000;
+}
+button span {
+	color: #3d2857;
+	font-size: 18px;
+}
+.container {
+	overflow-x: hidden;
+	padding: 0;
+}
+#social {
+	height: 100%;
+	padding: 20px 0!important;
+	text-align: center;
+}
+#social li a {
+	color: #3d2857;
+	text-decoration: none;
+}
+#social ul li a i {
+	color: #3d2857;
+}
+#social li:first-child {
+	margin-bottom: 20px;
+}
+#social li:first-child a:hover {
+	text-decoration: none;
+}
+#fone {
+	border: solid 1px #3d2857;
+	padding: 5px 10px;
+}
+#fone span {
+	font-size: 10px;
+}
+#facebook {
+	font-size: 10px;
+}
+#facebook i {
+	margin-right: 10px;
+}
+/*END NAVIGATION*/
+#section1 {
+	position: relative;
+	z-index: -800;
+}
+#section1 h2 {
+	bottom: 50%;
+	color: #5b5b5b;
+	float: right;
+	position: absolute;	
+	right: 90px;
+	text-transform: uppercase;
+	width: 50%;
+	z-index: 5500;
+}
+#section1 h2 span {
+	color: #3d2857;
+}
+#section1 img {
+	position: relative;
+	z-index: 5000;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#section2 {
+	background: url(images/midPurple.png) no-repeat;
+	margin-top: -110px;
+	padding: 180px 100px 100px 100px;
+	position: relative;
+	z-index: 9999;
+}
+#section2 h2 {	
+	font-size: 30px;
+	text-align: center;
+}
+#section3 {
+	margin-bottom: -130px;
+	margin-top: -100px;
+	position: relative;
+	z-index: 900;
+}
+.block1 a, .block2 a {
+	background-color: #fdfdfd;
+	color: #3d2857;
+	font-size: 14px;
+	padding: 15px 50px;
+}
+.block1 a:hover, .block2 a:hover {
+	background-color: #3d2857;
+	color: #fdfdfd;
+	text-decoration: none;
+}
+.block1 {
+	background: url(images/bg01.jpg) center no-repeat;
+	padding: 220px 0;
+	text-align: center;
+}
+.block2 {
+	background: url(images/bg02.jpg) center no-repeat;
+	padding: 220px 0;
+	text-align: center;
+}
+footer {
+	background: #3d2857;
+	/*background: #3d2857 url(images/footerBg.png);*/
+    border-radius: 80% 80% 0px 0px;
+    position: relative;
+	text-align: center;
+	z-index: 1000;
+	width: 100%;
+}
+#footer {
+	padding: 150px 100px 20px 100px;
+}
+#footer .row {
+	height: auto!important;
+}
+#footer nav ul {
+	list-style: none;
+	padding: 0;
+}
+#footer nav ul li {
+	display: inline-block;
+}
+#footer nav ul li a {
+	color: #fff;
+	display: block;
+	padding: 5px;
+}
+#footer nav ul li a:hover {
+	color: #6c6c6c;
+	text-decoration: none;
+}
+#footer .row div p {
+	line-height: 10px;
+}
+#footer .row div:first-child p {
+	text-align: left;
+}
+#footer #responsavel {
+	line-height: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*CONTATO PAGE*/
+#contato, #cursoLista, #about {
+	color: #6c6c6c;
+	text-align: center;
+}
+#contato .row,  #cursoLista .row, #about .row {
+	margin-bottom: 40px;
+}
+#contato h2, #cursoLista h2 {
+	margin-bottom: 50px;
+}
+/*END CONTATO*/
+/*CLINICA PAGE*/
+#about {
+	padding: 0 30px;
+}
+#about .row img {
+	width: 100%;
+}
+#doc1 {
+	padding-right: 100px;
+}
+#doc2 {
+	padding-left: 100px;
+}
+.docTitle {
+	font-size: 12px;
+	font-style: italic;
+}
+/*END CLINICA*/
+/*CURSOS PAGE*/
+#cursoLista {
+	padding: 0 50px;
+}
+#cursoLista p {
+	margin-bottom: 20px;
+}
+.curso {
+	margin-bottom: 10px;
+}
+.curso header {
+	background-color: #e2e2e4;
+	cursor: pointer;
+	padding: 10px 20px;
+}
+.curso header h4, #cursoLista h3 {
+	text-align: left;
+}
+.curso .content {
+	display: none;
+}
+.curso .content ul {
+	list-style-type: circle;
+	margin-bottom: 20px;
+}
+.activeCourse {
+	background-color: #2a0b3d!important;
+	color: #fff;
+}
+.plusSign {
+	margin-right: 15px;
+}
+.content {
+	margin: 0 auto;
+	text-align: left;
+	width: 60%;
+}
+/*END CURSOS*/
+
+/*Tratamentos Page*/
+#tratamentos {
+	margin-bottom: 110px; 
+	padding: 0 100px;
+}
+#tratamentos p {
+	color: #3e3d3d!important;
+	text-align: left;
+}
+#tratamentos h2 {
+	text-align: center;
+}
+#tratamentos .text-center {
+	margin: 30px 0!important;
+	text-align: center!important; 
+}
+@media screen and (max-width: 1200px) {
+	.navContainer {
+		width: 100%;
+	}
+	.block1, .block2 {
+		padding: 220px 0;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 1045px) {
+	.navbar {
+		padding: 10px;
+	}
+	.navbar-brand {
+		padding-left: 10px!important;
+	}
+}
+/*Override bootstrap mobile nav breakpoint*/
+@media screen and (max-width: 991px) {
+	.navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+        padding: 5px 10px 3px 10px!important;
+    }
+    .navbar-collapse {
+    	background-color: #fff;
+    	border-bottom: solid 1px #3d2857;
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+    	border-bottom: solid 1px #3d2857;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    
+    #mynav button {
+        margin-top: 30px;
+    }
+	.nav {
+        z-index:99 !important;
+    }    
+    .slide {
+        width:100% !important;
+        position:relative;
+    }
+    .navbar-toggle {
+        position:inherit;
+    }
+    .container>.navbar-collapse, .container>.navbar-header {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .navbar .container {
+		padding: 0 20px;
+	}
+		.navbar {
+		padding-top:0px;
+		margin-right:0;
+	}
+	.navbar-toggle {
+	    border: 1px solid #524c74;
+		margin-top:40px;
+	}
+	.navbar-toggle .icon-bar {
+		background-color:white;
+	}
+	.navbar-brand {
+	    height: auto;
+	    padding: inherit;
+		padding-left:50px;
+	    line-height: inherit;
+	}
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+	    margin: auto;
+		text-align:center;
+	}
+	.nav, .dropdown-menu li a {
+		height: auto!important;
+	    margin-top: 0px;
+		margin:auto;
+	}
+	.navbar-nav li a {
+		line-height: 0;
+		padding: 20px;
+	}
+	.nav {
+		margin-top: 20px;
+	}
+
+	.navbar {
+		height: 70px;
+	}
+	.container {
+		overflow-x: visible;
+	}
+	#mobileContent {
+		display: block!important;
+	}
+	#section2, #section3 {
+		display: none!important;
+	}
+	.heading {
+		background-color: #3d2857;
+		color: #fff;
+		padding: 50px 30px;
+		text-align: center;
+	}
+	.block1, .block2 {
+		background-size: cover;
+		padding: 100px 0;
+	}
+	footer {
+	    border-radius: 0%;
+	}
+	#footer {
+		padding: 50px 30px 20px 30px;
+	}
+	#footer .row div:first-child p {
+		text-align: center;
+	}
+	#footer .row div p {
+		margin-bottom: 20px;
+	}
+	#criditsLogo {
+		bottom: 0;
+	}
+}
+@media screen and (max-width: 760px) {
+	#doc1, #doc2, #tratamentos, #cursoLista {
+		padding: 0 15px;
+	}
+	.navbar-brand img {
+		width: 150px;
+	}
+	.navbar-toggle {
+		margin-top: 0!important;
+	}
+	.navContainer {
+		height: auto!important;
+	}
+}
+@media screen and (max-width: 580px) {
+	#section1 h2 {
+		bottom: 5%;
+		font-size: 20px;
+		right: 55px;
+	}
+	.heading h2 {
+		font-size: 18px;
+	}
+}

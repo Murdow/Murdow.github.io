@@ -1,0 +1,83 @@
+/*-------------------------------------------------
+            IMAGE GALLERY Mar-2016
+-------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+.galleryWrapper {
+  overflow: hidden;
+  width: 100%;
+}
+.box { 
+  border: solid 1px #000;
+  float: left;
+  padding-bottom: 25%;
+  position: relative;
+  width: 25%; 
+}
+.boxContent {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.boxContent img {
+  width: 100%;
+}
+.boxContent .titleBox {
+  font-size: 2em;
+  line-height: 250px;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  top: 0;
+  background: rgba(15,105,63,.8);
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.boxContent:hover .titleBox{
+  left: 0;
+}
+.boxContent .titleBox a {
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+}
+.boxContent .titleBox a:hover {
+  background-color: #ffffff;
+  color: #0f693f;
+}
+@media only screen and (max-width: 480px) {
+  .box {
+    padding-bottom: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+  .box {
+    padding-bottom: 50%;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+  .box {
+    padding-bottom: 33.3%;
+    width: 33.3%;
+  }
+}
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+  .box {
+    padding-bottom: 25%;
+    width: 25%;
+  }
+}

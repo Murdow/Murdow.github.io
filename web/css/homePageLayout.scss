@@ -1,0 +1,244 @@
+/*----------Variables----------*/
+$divWidth: 100%;
+$divHeight: 100%;
+$menuTitleFontSizeHeader: 70px;
+$pagesFontSizeHeader: 40px;
+$background01: 'images/homePageBackgrounds/forestBackground.jpg';
+$background2: 'images/homePageBackgrounds/forestBackground2.jpg';
+$background3: 'images/homePageBackgrounds/darkBackground.jpg';
+$background4: 'images/homePageBackgrounds/bodyBackground.jpg';
+
+* {
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+
+/*----------General----------*/
+#mainMenu, #gamesSection, #webSection, #aboutSection {
+	width: $divWidth;
+	height: $divHeight;
+	color: white;
+	position: absolute;
+
+	.sectionTitle {		
+		font-size: $pagesFontSizeHeader;
+		float: left;	
+	}	
+}
+.btn_back {
+	vertical-align: bottom;
+	line-height: 50px;
+	margin-left: 30%;
+	cursor: pointer;
+	text-decoration: underline;		
+}
+
+/*----------End General----------*/
+
+.container {
+	width: $divWidth;
+	height: $divHeight;
+	background-color: black;	
+	position: relative;
+	overflow: hidden;
+}
+#mainMenu {
+	background: url($background01);	
+	left: 0;
+
+	h1 {
+		margin: 5% 0 0 10%;
+		font-size: $menuTitleFontSizeHeader;
+	}
+
+	ul {
+		list-style: none;
+		margin: 20% 0 0 60%;
+
+		li {
+			font-size: 40px;
+			line-height: 80px;
+			width: 40%;				
+		}
+
+		li:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+}
+.sectionsHeader {
+	width: 100%;
+	height: 50px; 	
+	margin-top: 2%;
+	padding-left: 5%;
+	border-top: solid 1px white;
+	border-bottom: solid 1px white;
+}
+
+#webBlock {
+	img {
+		margin: 0 4% 2% 0;
+		width: 20%;
+	}
+	img:hover {
+		border: solid 1px yellow;
+	}
+}
+#gameBlock {
+	img {
+		width: 16.2%;
+	}
+	img:hover {
+		border: solid 1px yellow;
+	}
+}
+.ContentContainer {		
+	width: 94%;	
+	position: absolute;
+	top: 15%;
+	left: 4%; 
+}
+#gamesSection {	
+	background: url($background2); 	
+	left: 100%;	
+}
+#event_horizon, #stones, #zombie_hunt, #army_invasion, #zeerax_project, #space_war {
+	width: 90%;	
+	position: absolute;
+	top: 100%;
+	left: 5%;	
+}
+.infoContainer {
+	float: left;
+	width: 32.7%; 
+
+	h2 {
+		margin-bottom: 2%;
+	}
+	p {		
+		text-align: justify;
+	}
+}
+.imagesContainer {
+	width: 58%;
+	float: right; 
+	height: auto; 
+	text-align: center; 
+
+	img {
+		width: 25%;			
+	}
+}
+#webSection {	
+	background: url($background2);
+	left: 100%;
+}
+
+#aboutSection {	
+	background: url($background3);
+	left: 100%;
+
+	ul {
+		list-style-type: square;
+		list-style-position: inside;
+		line-height: 25px;
+	}
+	a {
+		color: white;
+	}
+}
+#webCourses {
+	li {
+		display: inline;
+		margin-right: 5px;
+	}
+}
+
+@media screen and (max-width: 1024px) {		
+	.infoContainer {
+		float: none;
+		width: 100%;
+		iframe {
+			width: 280px;
+			height: 157px;
+			float: left;
+			margin-right: 5px;
+		}
+	}
+	.imagesContainer {
+		float: none;
+		clear: both;
+		width: 100%;
+		margin-top: 50px;
+		img {
+			width: 15%;
+		}
+	}
+			
+	.btn_back {
+		float: right;
+		margin-left: 0;
+		margin-right: 5%;		
+	}
+}
+@media screen and (max-width: 640px) {
+	#mainMenu {		
+		ul {
+			margin: 20% 0 0 40%;
+		}
+	}
+}
+@media screen and (max-width: 320px) {
+	#mainMenu {
+		h1 {
+			font-size: $menuTitleFontSizeHeader / 2;
+		}		
+	}
+	#event_horizon {
+		p {
+			font-size: 12px;
+		}
+	}
+}
+@media screen and (max-height: 480px) {
+	#mainMenu {
+		ul {
+			margin-top: 10%;
+		}
+	}
+	.ContentContainer {
+		top: 20%;		
+	}
+	#event_horizon, #stones, #zombie_hunt, #army_invasion, #zeerax_project, #space_war {		
+		font-size: 15px;		
+	}	
+	iframe {
+		width: 200px;
+		height: 100px;
+	}
+	#aboutBlock {
+		font-size: 10px;
+	}
+}
+@media screen and (max-height: 320px) {
+	#mainMenu {
+		h1 {
+			font-size: $menuTitleFontSizeHeader / 2;
+		}	
+		ul {
+			margin: 2% 0 0 40%;
+			li {
+				font-size: 20px;
+			}
+		}	
+	}
+	#event_horizon {
+		p {
+			font-size: 12px;
+		}
+	}
+}

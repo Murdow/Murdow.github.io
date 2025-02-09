@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Blanka</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Noah">
+	<meta name="description" content="Blanka Page">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/blanka_layout.css"/>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>		
+</head>
+<body>
+	<div class="body_block">
+		<header class="main_header">
+			<span id="logo">B</span>
+			<h1>Blanka</h1>
+			<img class="mobile_menu" src="images/blanka_images/mobile_menu.png">
+			<ul class="social_media">
+				<li><a href="#"><img src="images/blanka_images/social/twitter_icon.png" alt="twitter"></a></li>
+				<li><a href="#"><img src="images/blanka_images/social/facebook_icon.png" alt="facebook"></a></li>
+				<li><a href="#"><img src="images/blanka_images/social/rss_icon.png" alt="rss"></a></li>
+				<li><a href="#"><img src="images/blanka_images/social/pinterest_icon.png" alt="pinterest"></a></li>
+				<li><a href="#"><img src="images/blanka_images/social/google_icon.png" alt="googke+"></a></li>
+				<li><a href="#"><img src="images/blanka_images/social/dribble_icon.png" alt="dribble"></a></li>
+			</ul>
+		</header>
+
+		<nav class="main_menu">
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Work</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+
+		<section class="slider_content">
+			<div class="slider_body">
+				<img id="slider_image_01" src="images/blanka_images/slider/slider_img_01.jpg" alt="slider_img01">
+				<img id="slider_image_02" src="images/blanka_images/slider/slider_img_01.jpg" alt="slider_img01">
+				<img id="slider_image_03" src="images/blanka_images/slider/slider_img_01.jpg" alt="slider_img01">				
+			</div>
+			<div class="slider_article">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus eu.</p>				
+			</div>
+			<div class="btn_HomePage"><span>BROWSE PORTFOLIO</span></div>
+		</section>
+
+		<section class="video_block">
+			<article class="video_block_article">				
+				<a href="#openModal"><img src="images/blanka_images/video_img.jpg" alt="video_img"></a>
+				<h2>Get To Know Us A Little Better!</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi, quis tincidunt eros. Nullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec sit amet sapien neque, id ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia.</p>
+
+				<p>Nullam tellus turpis, fringilla sit amet congue ut, luctus a nulla. Donec sit amet sapien neque, id ullamcorper diam. Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia.</p>
+			</article>
+			<div id="openModal" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+						<iframe width="480" height="360" src="https://www.youtube.com/embed/wZZ7oFKsKzY" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+
+		<section class="portfolio_block">
+			<article class="portfolio_block_article">
+				<h2>A Couple of Our Featured Projects</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis ac, gravida quis tortor. Suspendisse non urna mi, quis tincidunt eros.</p>			
+			</article>
+			<!--Carrossel-->
+			<div class="carrossel">
+				<a href="http://www.facebook.com">
+					<img id="carrossel_img_01" class="carrossel_imgs" src="images/blanka_images/carrossel/port_img_01.jpg" alt="carrossel_img_01">
+					<img id="selected_img01" class="selected" src="images/blanka_images/carrossel/portfolio_active_image.png" alt="">
+				</a>
+				<a href="http://www.google.com">
+					<img id="carrossel_img_02" class="carrossel_imgs" src="images/blanka_images/carrossel/port_img_02.jpg" alt="carrossel_img_01">
+					<img id="selected_img02" class="selected" src="images/blanka_images/carrossel/portfolio_active_image.png" alt="">
+				</a>
+				<a href="http://www.twitter.com">
+					<img id="carrossel_img_03" class="carrossel_imgs" src="images/blanka_images/carrossel/port_img_03.jpg" alt="carrossel_img_01">
+					<img id="selected_img03" class="selected" src="images/blanka_images/carrossel/portfolio_active_image.png" alt="">
+				</a>				
+				<a href="http://www.terra.com">
+					<img id="carrossel_img_04" class="carrossel_imgs" src="images/blanka_images/carrossel/port_img_04.jpg" alt="carrossel_img_01">
+					<img id="selected_img04" class="selected" src="images/blanka_images/carrossel/portfolio_active_image.png" alt="">
+				</a>
+				<a href="http://www.baixaki.com.br">
+					<img id="carrossel_img_05" class="carrossel_imgs" src="images/blanka_images/carrossel/port_img_05.jpg" alt="carrossel_img_01">
+					<img id="selected_img05" class="selected" src="images/blanka_images/carrossel/portfolio_active_image.png" alt="">
+				</a>		
+			</div>
+			<!--Description-->
+			<div class="portfolio_img_description">			
+				<h2>Dark UI Kit Freebie</h2>
+				<img id="left_arrow" src="images/blanka_images/arrows/portfolio_left_arrow.png" alt="left_arrow">
+				<div class="descriptiom_text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.</p>
+				</div>
+				<img id="right_arrow" src="images/blanka_images/arrows/portfolio_right_arrow.png" alt="right_arrow">
+			</div>				
+		</section>
+
+		<section class="callout_block">
+			<h2>Are You Ready To Be Blown Away?</h2>
+			<div class="btn_HomePage"><span>CLICK HERE TO FIND OUT</span></div>
+		</section>
+
+		<footer class="main_footer">
+			<p>COPYRIGHT 2013 RIGHTS RESERVED.</p>
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">WORK</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</footer>
+	</div>
+	<script src="js/blanka/app.js"></script>	
+</body>
+</html>

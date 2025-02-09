@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113398121-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-113398121-1');
+	</script>
+
+	<meta charset="utf-8">
+	<title>DOA COMM</title>
+	<meta name="author" content="DOA Comm - http://doacomm.com.br/">
+	<meta name="description" content="Seja qual for a sua necessidade, mais fidelização, mais visibilidade, mais resultados ou mais autoridade, ajudaremos você a alcançar o seu objetivo.">
+	<meta name="keywords" content="DOA, DOA COMM, Marketing, Odontologia, Saúde">
+	<meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="pageHeader">
+			<h1 class="hide">DOA COMM</h1>
+			<div class="container">
+			     <nav class="navbar" role="navigation">
+			     	
+			        <div class="container">
+			        	
+			            <!-- Brand and toggle get grouped for better mobile display -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			                    <i class="fa fa-bars" aria-hidden="true"></i>
+			                </button>
+			                <a class="pull-left img-responsive scroll" id="logo" href="index.php"><img src="images/logo.jpg" alt="DOA COMM - Logo" title="Odontologia Neves"></a>
+			            </div>
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+			                <ul class="nav navbar-nav">
+			                    <li>
+			                        <a href="#time" class="scroll">time</a>
+			                    </li>
+			                    <li>
+			                        <a href="#clientes" class="scroll">clientes</a>
+			                    </li>
+			                    <li>
+			                    	<a href="#habilidades" class="scroll">habilidades</a>
+			                    </li>
+			                    <li>
+			                        <a href="#contato" class="scroll">contato</a>
+			                    </li>
+			                </ul>
+			            </div>
+			            <!-- /.navbar-collapse -->
+			    
+			        </div>
+			   	</nav>
+			</div>
+		</header>
+
+		<main>
+			<div class="container">
+				<h1>sua primeira escolha<span> em marketing para saúde</span></h1>
+				<img  aria-hidden="true" id="ameba1" src="images/ameba/path16.png" data-enllax-ratio=".4" data-enllax-type="foreground">
+				<img  aria-hidden="true" id="ameba2" src="images/ameba/path5.png" data-enllax-ratio=".2" data-enllax-type="foreground">
+				<div class="row">
+					<div class="col-md-6 pull-right">
+						<p>
+							Seja qual for a sua necessidade, mais fidelização, mais visibilidade, mais resultados ou mais autoridade, ajudaremos você a alcançar o seu objetivo.<br><br> 
+							Experiência de uma década na área médica e odontológica, ética e respeito ao paciente são presença garantida em todas as nossas soluções de comunicação e design.
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<section id="time">
+			<div class="container">
+				<img id="rasgadoTop" draggable="false" src="images/rasgado-top.png">
+				<img class="img-responsive" id="timePic" src="images/foto-equipe.png" alt="Time">
+				<div class="col-md-6">
+					<h1>nós somos um time</h1>
+					<p>
+						Profissionais da saúde, designers, publicitários, administradores e psicólogos. Somos uma equipe multiprofissional com foco em resultados trabalhando de forma coordenada para atendê-lo com excelência. 
+						Unindo nossas habilidades, ajudamos você a vencer os desafios do complexo ambiente do Marketing na área da saúde.
+					</p>
+				</div>
+				<img class="img-responsive" id="assinaturas" src="images/assinaturas.png" alt="Assinaturas">
+				<img id="rasgadoBot" draggable="false" src="images/rasgado-bottom.png">
+			</div>
+		</section>
+
+		<section id="clientes">
+			<div class="container">
+				<h1>nossos clientes</h1>
+				<img  aria-hidden="true" id="ameba3" src="images/ameba/path14.png" data-enllax-ratio=".1" data-enllax-type="foreground">
+				<img  aria-hidden="true" id="ameba4" src="images/ameba/path13.png" data-enllax-ratio=".3" data-enllax-type="foreground">
+				<!--<ul>
+					<li><img src="images/clientes/kota.jpg" alt="KOTA"></li>
+					<li><img src="images/clientes/kota.jpg" alt="Autodesk"></li>
+					<li><img src="images/clientes/kota.jpg" alt="Implacil"></li>
+				</ul>-->
+				<img class="img-responsive" src="images/clientes/clientes.jpg" alt="Clientes">
+			</div>
+		</section>
+
+		<section id="habilidades">
+			<div class="container">
+				<h1>nossas habilidades</h1>
+				<img  aria-hidden="true" id="ameba5" src="images/ameba/path6.png" data-enllax-ratio=".1" data-enllax-type="foreground">
+				<img  aria-hidden="true" id="ameba6" src="images/ameba/path7.png" data-enllax-ratio=".3" data-enllax-type="foreground">
+				<div id="habilidadesContainer">
+					<div class="item">
+						<img src="images/Digital.png" alt="Icone de Computador">
+						<h2>digital</h2>
+						<p>Websites e blog, Fidelização de Pacientes por E-mail</p>
+					</div>
+					<div class="item">
+						<img src="images/Impresso.png" alt="Icone de Avião de papel">
+						<h2>identidade visual</h2>
+						<p>Impressos, Projetos de Sinalização</p>
+					</div>
+					<div class="item">
+						<img src="images/Social.png" alt="Icone de Megafone">
+						<h2>mídias sociais</h2>
+						<p>Inbound Marketing, Google, Facebook &#38; Instagram Ads</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contato">
+			<div class="container">
+				<div class="col-md-6">
+					<h1>venha tomar<span> um café</span><span> com nossa</span> equipe</h1>
+					<img src="images/cafe.png" alt="Icone de Café">
+					<a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+						<p>Av. Dr. Chucri Zaidan, 1550 - Sala 602</p>
+						<p>Morumbi | CEP 04583-110</p>
+					</a>
+				</div>
+				<div class="col-md-6">
+					<?php if(isset($_GET['success']) && $_GET['success'] == "true") echo "<p class='text-center' id='successMsg'>Mensagem enviada com sucesso!</p>"; ?>
+					<form class="form-horizontal" method="POST" action="enviar.php">
+						<label for="nome">nome</label>
+						<input id="nome" type="text" name="nome" required>
+						<label for="email">e-mail</label>
+						<input id="email" type="email" name="email" required>
+						<label for="fone">telefone</label>
+						<input id="fone" type="tel" name="fone" maxlength="11" required>
+						<label id="mensagem">em que podemos te ajudar?</label>
+						<textarea id="mensagem" name="mensagem" required></textarea>
+						<input class="pull-right" type="submit" value="enviar">
+					</form>
+				</div>
+			</div>
+
+			<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			  <div class="modal-dialog modal-lg" role="document">
+			    <div class="modal-content">
+			       <div class="modal-header">
+			         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			         <h4 class="modal-title" id="myModalLabel">Av. Dr. Chucri Zaidan, 1550 - Sala 602 | Morumbi | CEP 04583-110</h4>
+			       </div>
+			       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.4062307514273!2d-46.704512485020935!3d-23.625618684651027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50dcbf973925%3A0x73b23d44295dca7f!2sAv.+Dr.+Chucri+Zaidan%2C+1550+-+Ch%C3%A1cara+Santo+Ant%C3%B4nio+(Zona+Sul)%2C+S%C3%A3o+Paulo+-+SP%2C+04583-110!5e0!3m2!1spt-BR!2sbr!4v1517450207897" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			    </div>
+			  </div>
+			</div>
+			<img  aria-hidden="true" id="ameba7" src="images/ameba/path14.png">
+			<img  aria-hidden="true" id="ameba8" src="images/ameba/path13.png">
+		</section>
+
+		<footer>
+			<div class="container">
+				<p>AV DR. CHUCRI ZAIDAN, 1550 | SALA 602 | MORUMBI | 04583-110<span class="pull-right"><a href="tel:1131411808">11 3141 1808</a></span></p>
+			</div>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/behavior.js"></script>
+	<script src="js/jquery.enllax.min.js"></script>
+	<script type="text/javascript">
+		if($( window ).width() > 990)
+			$(window).enllax();
+	</script>
+	<!--MCT - Janeiro 2018-->
+</body>
+</html>

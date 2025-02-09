@@ -1,0 +1,69 @@
+.cookies-container {
+	color: #222;
+	position: fixed;
+	bottom: 2rem;
+	width: 100%;
+	z-index: 1000;
+}
+
+.cookies-content {
+	box-shadow: 0 1px 3px rgba(0,0,0,.15);
+	background: #fff;
+	max-width: 520px;
+	border-radius: 5px;
+	padding: 1rem;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-gap: .5rem;
+	opacity: 0;
+	transform: translateY(1rem);
+	animation: slideUp .5s forwards;
+}
+
+@keyframes slideUp {
+	to {
+		transform: initial;
+		opacity: initial;
+	}
+}
+
+.cookies-title {
+	font-weight: 700;
+
+}
+
+.cookies-pref {
+	margin-right: 1rem;
+}
+
+.cookies-opt {
+	font-weight: 400;
+}
+
+input[type=checkbox] {
+	margin-right: 5px;
+}
+
+.cookies-save {
+	grid-column: 2; /*Coloca o btn na segunda coluna*/
+	grid-row: 1/3; /*Btn pega da primeira linha até a terceira*/
+	background: #007cf8;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	padding: .8rem 1rem;
+	font-size: 14px;
+}
+
+@media (max-width: 500px) {
+	.cookies-content  {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+	.cookies-save {
+		grid-column: 1;
+		grid-row: 3;
+	}
+}

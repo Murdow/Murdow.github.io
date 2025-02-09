@@ -1,0 +1,71 @@
+/*-------------------------------------------------
+            IMAGE GALLERY Mar-2016
+-------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+#galleryWrapper {
+  overflow: hidden;
+  width: 100%;
+}
+.box { 
+  float: left;
+  padding-bottom: 25%;
+  position: relative;
+  width: 25%; 
+}
+.boxContent {
+  left: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+.boxContent img {
+  width: 100%;
+}
+.boxContent .titleBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -50px;
+  background-color: #000000;
+  background: rgba(0,0,0,.5);
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.boxContent:hover .titleBox{
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 480px) {
+  .box {
+    padding-bottom: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+  .box {
+    padding-bottom: 50%;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+  .box {
+    padding-bottom: 33.3%;
+    width: 33.3%;
+  }
+}
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+  .box {
+    padding-bottom: 25%;
+    width: 25%;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Title</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<link href="lightbox/dist/css/lightbox.css" rel="stylesheet"><!--Lightbox-->
+<link rel="stylesheet" type="text/css" href="pageStyle.css">
+</head>
+<body>
+	<header id="mainHeader">
+		<h1>Book Title</h1>
+	</header>
+	<sidebar class="sidebar" id="leftSidebar"></sidebar>
+	<div id='textContainer'></div>
+	<sidebar class="sidebar" id="rightSidebar"></sidebar>
+	
+	<footer id="footer">
+
+		<div id="controlPanel">
+
+			<button class="controlPanelButtons" id="btn_play"></button>
+			<button class="controlPanelButtons" id="btn_previousPage"></button>
+			<button class="controlPanelButtons" id="btn_next_page" onclick="nextPage()"></button>
+
+			<div id="volumeControl">aaaaaaaaaaaaaaa</div>
+
+		</div>
+
+	</footer>
+	<script src="lightbox/dist/js/lightbox.js"></script><!--Lightbox-->
+
+	<script type="text/javascript" src="obj.js"></script>
+	<script type="text/javascript">
+		var currentPage = 0;
+		var textContainer = document.getElementById("textContainer");
+		var leftSidebar = document.getElementById("leftSidebar");
+		var rightSidebar = document.getElementById("rightSidebar");
+		window.onload = function load() {
+			textContainer.innerHTML = '<div id="pageNumber">' + currentPage + '</div>' + pages[currentPage].pageText;
+			distributeImagesBetweenSidebars();
+		}
+			
+		function nextPage() {
+			currentPage++;
+			textContainer.innerHTML = '<div id="pageNumber">' + currentPage + '</div>' + pages[currentPage].pageText;
+			distributeImagesBetweenSidebars();
+
+		}
+		function distributeImagesBetweenSidebars() {
+			var imgQtd = pages[currentPage].images.length;
+			
+			leftSidebar.innerHTML = "";
+			rightSidebar.innerHTML = "";
+
+			for(var i = 0; i < Math.floor(imgQtd / 2); i++) {	
+
+				leftSidebar.innerHTML += "<figure><a class='example-image-link' href='" + pages[currentPage].images[i] + "' data-lightbox='images-page" + currentPage + "' data-title='" + pages[currentPage].imagesCaption[i] + "'><img class='example-image' src='" + pages[currentPage].images[i] + "' alt='image" + i + "'></a><figcaption>" + pages[currentPage].imagesCaption[i] + "</figcaption></figure>";
+
+			}
+			for(var i = Math.floor(imgQtd / 2); i < imgQtd; i++) {
+
+				rightSidebar.innerHTML += "<figure><a class='example-image-link' href='" + pages[currentPage].images[i] + "' data-lightbox='images-page" + currentPage + "' data-title='" + pages[currentPage].imagesCaption[i] + "'><img class='example-image' src='" + pages[currentPage].images[i] + "' alt='image" + i + "'></a><figcaption>" + pages[currentPage].imagesCaption[i] + "</figcaption></figure>";
+			}
+		}
+		
+	</script>
+</body>
+</html>
